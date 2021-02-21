@@ -1,0 +1,217 @@
+@import url(./fonts.css);
+@import url(./partials/_variables.css);
+@import url(./partials/_global.css);
+html {
+  scroll-behavior: smooth;
+}
+.header_area .main_menu .navbar .navbar-brand {
+  padding-top: 25px;
+}
+.header_area .main_menu .navbar {
+  padding: 1rem 20rem;
+}
+.header_area .main_menu .nav-item .nav-link {
+  font: normal 500 15px/2px var(--roboto);
+  text-transform: uppercase;
+  padding: 1.7rem;
+  color: var(--title-color);
+}
+.header_area .main_menu .navbar-nav .active a {
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.header_area .main_menu .navbar-nav :hover {
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.site-main .site-banner {
+  background: url(../img/banner/home-banner1.png) no-repeat 0% 50%;
+}
+.site-main .site-banner .site-title h3 {
+  padding-top: 35%;
+  font-weight: 400;
+  font-size: 2rem;
+}
+.site-main .site-banner .site-title h3::after {
+  content: "";
+  height: 2px;
+  width: 30vh;
+  background: black;
+  display: inline-block;
+  margin-left: 4%;
+  transform: translateY(-4px);
+}
+.site-main .site-banner .site-title h2 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+.site-main .site-banner .site-title h4 {
+  font-size: 1.5rem;
+  font-weight: 380;
+}
+.site-main .site-banner .banner-image img {
+  padding: 7rem 0;
+  width: 90rem;
+}
+
+.site-main .site-about {
+  padding: 8rem 5rem;
+}
+.site-main .site-about .about-title h2 {
+  font: normal 380 30px/40px var(--roboto);
+  letter-spacing: 4px;
+}
+
+.site-main .site-about .about-title .about-me > p {
+  padding: 0rem 0;
+}
+.site-main .skills-area {
+  padding: 1rem 20rem;
+  margin-bottom: 4rem;
+}
+.site-main .skills-area .row-one .col-md-4 {
+  display: flex;
+  justify-content: center;
+}
+
+.site-main .skills-area .row-one .col-md-4 .single-skill {
+  border: 1px solid var(--border-color);
+  text-align: center;
+  padding: 1.8rem 0;
+  margin: 0.9rem 0;
+  width: 180px;
+  height: 100px;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+.site-main .skills-area .row-one .col-md-4 .single-skill img {
+  width: 52%;
+}
+.site-main .skills-area .row-one .col-md-4 .single-skill:hover {
+  box-shadow: var(--box-shadow);
+  transform: scale(1.2);
+}
+.site-main .skills-area .row-one .col-md-4 .single-skill:hover > img {
+  filter: brightness(1.5);
+}
+.site-main .skills-area .experience-area {
+  padding-left: 1rem;
+}
+.site-main .skills-area .experience-area span {
+  display: block;
+}
+
+.site-main .skills-area .experience-area .years-area {
+  background: url(../img/client-info-bg.png) no-repeat 40px 20px;
+  padding: 2rem 0;
+  width: 30rem;
+  height: 18rem;
+  padding-left: 9rem;
+  position: relative;
+}
+.bg-panel {
+  position: absolute;
+  left: -190px;
+  top: 0px;
+  background: #8a7d7d0e;
+  width: 380px;
+  height: 400px;
+  margin-left: 340px;
+  z-index: -1;
+}
+.site-main .skills-area .experience-area .years-area .years {
+  font: normal bold 84px/40px var(--roboto);
+  color: var(--primary-color2);
+  z-index: 2;
+}
+.site-main .skills-area .experience-area .years-area h2 > span {
+  font: normal 600 21px/30px var(--roboto);
+}
+.site-main .skills-area .experience-area .call-area {
+  padding-left: 10rem;
+}
+.call-now a:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+.call-now a,
+span {
+  font-family: var(--roboto);
+}
+.call-now span {
+  cursor: pointer;
+  font-weight: 400;
+  color: var(--text-color);
+}
+.call-now span:hover {
+  color: var(--primary-color);
+  transform: scale(1.2);
+  transition: transform 0.6s ease-in;
+}
+
+.folio {
+  font: normal 380 30px/40px var(--roboto);
+  letter-spacing: 4px;
+}
+.folio-a {
+  font: normal 380 18px/40px var(--roboto);
+}
+.site-main .subscribe-us-area .subscribe {
+  background:linear-gradient(rgba(251, 86, 7, .9), rgba(251, 86, 7, .8)), url(../img/subscribe-bg.png) no-repeat;
+  padding: 7rem 0;
+  margin: 3rem auto;
+}
+
+.site-main .subscribe-us-area .subscribe .subscribe-title h4 {
+  font: normal 700 30px/ 30px var(--roboto);
+  color: whitesmoke;
+}
+
+.site-main .subscribe-us-area .subscribe .subscribe-title p {
+  color: whitesmoke;
+  padding: 1rem 4rem;
+}
+.col {
+  font-family: var(--roboto);
+  cursor: pointer;
+}
+.col:hover {
+  transform: scale(1.2);
+  transition: transform 0.4s ease-in-out;
+  font-weight: 500;
+  color: black;
+}
+.socials {
+  padding-top: 6rem;
+}
+.socials a > i {
+  font-size: 22px;
+  color: whitesmoke;
+  padding: 2rem;
+}
+.socials a > i:hover {
+  color: black;
+  transform: scale(1.3);
+  transition: transform 0.4s ease-in-out;
+  font-weight: 500;
+}
+.footer {
+  background: url(../img/footer-bg.png) no-repeat;
+  padding-top: 8rem;
+}
+.ahoo{
+  color: var(--primary-color);
+}
+.navbar-brand{
+  width: 139px;
+  height: 45px;
+  margin-top: -4rem;
+}
+
