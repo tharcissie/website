@@ -2,9 +2,6 @@
 <html lang="en">
 
 <head>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9SXLNZBS9C"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
@@ -18,27 +15,26 @@
   <!--css-->
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/all.min.css">
-  <link href="lib/animate/animate.min.css" rel="stylesheet" />
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="css/css/style.css" rel="stylesheet" />
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/responsive.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <style>
   .work-img {
     height: 30vh;
   }
-  .fab{
+
+  .fab {
     font-size: 30px;
     border-radius: 50%;
     color: orangered;
   }
-  .fab:hover{
+
+  .fab:hover {
     font-size: 35px;
     border-radius: 50%;
     color: black;
@@ -47,9 +43,9 @@
 
 <body>
   <header class="header_area">
-    <div class="main_menu">
+    <div class="main_menu fixed-top bg-light">
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="logo"></a>
+        <a class="nav-link text-uppercase" href="#"><b>Tharcissie Idufashe</b> / web developer</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -78,7 +74,7 @@
     <section id="home" class="site-banner">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 col-md-12 site-title">
+          <div class="col-lg-6 col-md-12 site-title" data-aos="fade-right" data-aos-duration="1000">
             <h3 class="title-text">
               Hello...
             </h3>
@@ -86,7 +82,7 @@
               I Am Tharcissie Idufashe
             </h2>
             <h4 class="title-text text-capitalize">
-              full-stack developer
+              Web developer
             </h4>
             <div class="site-buttons">
               <div class="d-flex flex-row flex-wrap">
@@ -95,27 +91,29 @@
                     class="fab fa-linkedin-in mr-3"></i></a>
                 <a href="https://www.facebook.com/tharcissie" target="_blank"><i class="fab fa-facebook-f mr-3"></i></a>
                 <a href="https://twitter.com/tharcissieidufa" target="_blank"><i class="fab fa-twitter mr-3"></i></a>
-                <a href="https://www.instagram.com/tharcissie_" target="_blank"><i class="fab fa-instagram mr-3"></i></a>
+                <a href="https://www.instagram.com/tharcissie_" target="_blank"><i
+                    class="fab fa-instagram mr-3"></i></a>
 
               </div>
             </div>
           </div>
-          <div class="col-sm-6 banner-image d-none d-lg-block">
+          <div class="col-sm-6 banner-image d-none d-lg-block" data-aos="fade-left" data-aos-duration="1000">
             <img src="./img/banner/banner-image.png" alt="" class="img-fluid">
           </div>
         </div>
       </div>
     </section>
-    <section id="about" class="site-about">
+    <hr>
+    <section id="about" data-aos="zoom-in" 
+    data-aos-duration="1000">
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-6 ">
             <div class="about-image d-none d-lg-block">
               <img src="./img/about-us.png" alt="" about class="img-fluid">
             </div>
-
           </div>
-          <div class="col-12 col-lg-6 about-title">
+          <div class="col-12 col-lg-6">
             <h2 class="text-capitalize pt-5">
               about me
             </h2>
@@ -139,7 +137,9 @@
         </div>
       </div>
     </section>
-    <section id="skills" class="skills-area">
+    <hr>
+
+    <section id="skills" class="skills-area" data-aos="flip-left" data-aos-duration="2000">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12">
@@ -195,7 +195,9 @@
         </div>
       </div>
     </section>
-    <section id="work" class="portfolio-mf sect-pt4 route">
+    <hr>
+    <section id="work" class="portfolio-mf sect-pt4 route" data-aos="fade-up"
+    data-aos-duration="3000">
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
@@ -211,7 +213,7 @@
           <div class="col-md-4">
             <div class="work-box">
               <div class="work-img">
-                <img src="img/portfolio/a.png" alt="" class="img-fluid" />
+                <img src="img/portfolio/a.png" alt=""/>
               </div>
               <div class="work-content">
                 <div class="row">
@@ -225,7 +227,7 @@
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
-                      <span class="fas fa-expand-alt" data-toggle="collapse" data-target="#collapse2"
+                      <span class="fas fa-expand-alt fa-xs" data-toggle="collapse" data-target="#collapse2"
                         aria-expanded="true" aria-controls="collapse2"></span>
                     </div>
                   </div>
@@ -258,7 +260,7 @@
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
-                      <span class="fas fa-expand-alt" data-toggle="collapse" data-target="#collapse1"
+                      <span class="fas fa-expand-alt fa-xs" data-toggle="collapse" data-target="#collapse1"
                         aria-expanded="true" aria-controls="collapse1"></span>
                     </div>
                   </div>
@@ -292,7 +294,7 @@
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
-                      <span class="fas fa-expand-alt" data-toggle="collapse" data-target="#collapseOne"
+                      <span class="fas fa-expand-alt fa-xs" data-toggle="collapse" data-target="#collapseOne"
                         aria-expanded="true" aria-controls="collapseOne"></span>
                     </div>
 
@@ -327,7 +329,7 @@
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
-                      <span class="fas fa-expand-alt" data-toggle="collapse" data-target="#collapse3"
+                      <span class="fas fa-expand-alt fa-xs" data-toggle="collapse" data-target="#collapse3"
                         aria-expanded="true" aria-controls="collapse3"></span>
                     </div>
                   </div>
@@ -360,7 +362,7 @@
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
-                      <span class="fas fa-expand-alt" data-toggle="collapse" data-target="#collapse4"
+                      <span class="fas fa-expand-alt fa-xs" data-toggle="collapse" data-target="#collapse4"
                         aria-expanded="true" aria-controls="collapse4"></span>
                     </div>
                   </div>
@@ -393,7 +395,7 @@
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
-                      <span class="fas fa-expand-alt" data-toggle="collapse" data-target="#collapse5"
+                      <span class="fas fa-expand-alt fa-xs" data-toggle="collapse" data-target="#collapse5"
                         aria-expanded="true" aria-controls="collapse5"></span>
                     </div>
                   </div>
@@ -425,7 +427,7 @@
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
-                      <span class="fas fa-expand-alt" data-toggle="collapse" data-target="#collapse6"
+                      <span class="fas fa-expand-alt fa-xs" data-toggle="collapse" data-target="#collapse6"
                         aria-expanded="true" aria-controls="collapse6"></span>
                     </div>
                   </div>
@@ -458,7 +460,7 @@
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
-                      <span class="fas fa-expand-alt" data-toggle="collapse" data-target="#collapse7"
+                      <span class="fas fa-expand-alt fa-xs" data-toggle="collapse" data-target="#collapse7"
                         aria-expanded="true" aria-controls="collapse7"></span>
                     </div>
                   </div>
@@ -491,7 +493,7 @@
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
-                      <span class="fas fa-expand-alt" data-toggle="collapse" data-target="#collapse8"
+                      <span class="fas fa-expand-alt fa-xs" data-toggle="collapse" data-target="#collapse8"
                         aria-expanded="true" aria-controls="collapse8"></span>
                     </div>
                   </div>
@@ -510,6 +512,7 @@
         </div>
       </div>
     </section>
+
     <section id="contact" class="subscribe-us-area pt-5">
       <div class="container subscribe">
         <div class="row">
@@ -519,17 +522,11 @@
               feel free to contact me through:</p>
           </div>
         </div>
-        <div class="d-sm-flex justify-content-center">
-          <form class="w-50">
-            <div class="row d-flex flex-row flex-wrap">
-              <div class="col text-white">
-                <i class="far fa-envelope px-2"></i> <span class="pl-2">tharcissieidufashe@gmail.com</span>
-              </div>
-              <div class="col text-white">
-                <i class="fas fa-phone-alt px-2"></i> <span class="pl-2">+250 780 490 851</span>
-              </div>
-            </div>
-          </form>
+        <div class="text-center text-white justify-content-center">
+          <span class="pl-1"> <i class="far fa-envelope px-1"></i>tharcissieidufashe@gmail.com</span> 
+          <span class="pl-2">  <i class="fas fa-phone-alt px-1"></i>+250 780 490 851</span>
+             
+            
         </div>
         <div class="d-sm-flex justify-content-center">
           <div class="row d-flex flex-row flex-wrap">
@@ -550,23 +547,8 @@
         Reserved</p>
     </footer>
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-    <div id="preloader"></div>
+  
   </main>
-  <!--js-->
-  <script src="./js/jquery-3.5.1.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/popper/popper.min.js"></script>
-  <script src="./js/bootstrap.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/counterup/jquery.waypoints.min.js"></script>
-  <script src="lib/counterup/jquery.counterup.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/lightbox/js/lightbox.min.js"></script>
-  <script src="lib/typed/typed.min.js"></script>
-  <script src="contactform/contactform.js"></script>
-  <script src="js/js/main.js"></script>
-  <script src="./js/script.js"></script>
-
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -576,6 +558,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+    <script>
+      AOS.init();
+    </script>
 
 </body>
 
