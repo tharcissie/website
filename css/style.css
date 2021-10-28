@@ -137,10 +137,7 @@ html {
   text-decoration: none;
   cursor: pointer;
 }
-.call-now a,
-span {
-  font-family: var(--roboto);
-}
+
 .call-now span {
   cursor: pointer;
   font-weight: 400;
@@ -175,7 +172,6 @@ span {
   padding: 1rem 4rem;
 }
 .col {
-  font-family: var(--roboto);
   cursor: pointer;
 }
 .col:hover {
